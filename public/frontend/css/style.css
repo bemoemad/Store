@@ -1,0 +1,158 @@
+:root{
+    --main-color:white;
+    --second-color:#333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.navbar{    
+    background-color:var(--second-color);
+    position:sticky;
+    top:0;
+    z-index:9999;
+}
+
+.navbar .navbar-brand , 
+.navbar .nav-link ,
+.navbar .navbar-toggler
+{
+    color:white;
+}
+
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.signup{
+    margin-right:10px;
+}
+
+.pass-error{
+    color:red;
+}
+
+.carousel-item{
+    height:400px;
+}
+.carousel-caption{
+    color:var(--second-color);
+    font-weight: bold;
+}
+
+
+.cats{
+    margin-bottom: 20px;
+}
+.fa-3x{
+    color:#CCC;
+}
+
+/* Footer Start */
+.footer{
+    font-family:var(--mainFont);
+    padding:25px 0;
+    background-color: var(--second-color);
+    color:#FFF;  
+}
+
+.footer .logo img{
+    width:50px;
+    height:50px;
+}
+
+.footer .desc{
+    color:#DDD;
+    font-family:tahoma;
+}   
+
+.footer ul li a{
+    color:white;
+    text-decoration:none;
+    transition-duration: 0.3s;
+    transition-property: padding-left;
+}
+
+.footer ul li a:hover{
+   color:yellowgreen;
+   padding-left:15px;
+}
+.footer .fa-facebook{
+    color:#1877f2;
+}
+.footer .fa-twitter{
+ color:#1da1f2;
+}
+
+.footer .fa-google-plus{
+ color:#34a853
+}
+.footer .fa-instagram{
+ color:#fcaf45
+}
+/* Foooter Ends */
+
+#exampleModal{
+    z-index: 10000;
+}
+
+.placeholder{
+    color:red;
+}
+/* .contact input::placeholder{
+    color:red;
+} */
+.contact input , .contact textarea{
+    border-radius: 0;
+    margin-bottom: 15px;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid red;
+}
+.contact input:focus ,.contact textarea:focus{
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid darkred;
+   
+}
+.contact textarea{
+    resize: none;
+    height:100px;
+}
+.pass-error{
+    display:none;
+}
+/* Media Start */
+@media (max-width:575px){
+    /* #mySlide{
+     /* ...  
+    } */
+
+    .carousel-item{
+        height:200px;
+    }
+   .contact{
+        display:none;
+    }
+  .footer{
+    background-color:#0d6efd;
+  }
+}
+
+@media (min-width:576px) and (max-width:991px){
+    .navbar{
+        background-color:white;
+        
+    }
+    .navbar .navbar-brand , 
+    .navbar .nav-link ,
+    .navbar .navbar-toggler
+    {
+        color:var(--second-color);
+    }
+}

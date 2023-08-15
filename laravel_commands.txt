@@ -1,0 +1,6 @@
+-- to create a new laravel app
+composer create-project laravel/laravel appname
+
+--To run your laravel app
+php artisan serve
+
